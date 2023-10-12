@@ -1,0 +1,179 @@
+<!-- Final Project for SDEV153 HTML -->
+
+<!-- DTD - Document Type Declaration -->
+<!DOCTYPE html>
+
+<!-- Dont forget to add the language attribute! -->
+<html lang = "en">
+
+<!-- HTML HEAD SECTION -->
+<head>
+
+	<!-- Our Website Title -->
+	<title>Trentyne Morgan :: Sketch Gallery</title>
+
+	<!-- UTF-8 Character Set -->
+	<meta charset = "utf-8">
+	
+	<!-- Linking our style sheet relatively -->
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+
+	<!-- Website Favorites icon -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+	<!-- Viewport meta tag for Mobile Displays -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The description meta tag content is displayed on the SERP by some search engines, such as Google. 
+	The name attribute indicates the use of the meta tag. The content attribute indicates the values needed for that specific use. 
+	The ­description value for the name attribute indicates that the use of the meta tag is to provide a description. -->
+	<meta name="description" content="A gallery of all of my traditional sketch projects over the years.">
+
+	<!-- Javascript -->
+	<script>
+
+		function validateEmail(email) {
+
+ 			// Regular expression pattern for email validation
+  			var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  			// Test the email against the pattern
+  			if (emailPattern.test(document.forms[0].myEmail.value)){
+
+				return true;
+
+			} else {
+
+				alert("Invalid E-mail Address. Please enter an email in the format 'username@provider.domain'");
+				return false;
+			}
+
+		}
+
+	</script>
+	
+</head>
+
+<!-- HTML BODY SECTION -->
+<body>
+
+	<nav>
+		
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+	   		<li><a href = "artwork.html">Artwork</a></li>
+			<li><a href = "program.html">Programming</a></li>
+			<li><a href = "https://www.linkedin.com/in/trentyne-morgan-4a30031b4/"
+			target = "_blank">LinkedIn</a>&trade;</li>
+		</ul>
+
+	</nav>
+
+	<div id = "wrapper">
+	
+		<!-- Image Here -->
+		<!-- When using aria-label, please use role to specify what
+		element role it should take, otherwise you will get warnings
+		from the Nu HTML checker.-->
+		<div role = "img" id = "vaporsun" aria-label = "Logo Graphic">
+		</div>
+
+		<!-- Website's Header -->
+		<header>
+	
+			<h1><span class = "tealheader">Sketch Art Gallery</span></h1>
+		
+		</header>
+
+				
+		
+		<!-- Secondary Navigation within Programming Projects-->
+			
+		<ul class = "gallerynav">
+
+			<li><a href = "sketchgallery.html">Sketch Art Gallery</a></li>
+			<li><a href = "pixelartgallery.html">Digital Art Gallery</a></li>
+		
+		</ul>
+
+		<!-- Div ID for Jamaroquai Art-->
+		<div role = "img" id = "sketch7" aria-label = "Characters my friend created drawn in a Meme format">
+		</div>
+
+		<!-- Div ID for Uni Art-->
+		<div role = "img" id = "sketch13" aria-label = "Uni Cornelious from Sparklecare Hospital">
+		</div>
+
+		<!-- Div ID for Buster Rod G Art-->
+		<div role = "img" id = "sketch3" aria-label = "Buster Rod G from Mega Man: The Wily Wars">
+		</div>
+
+		<!-- Div ID for Robot Jones Art-->
+		<div role = "img" id = "sketch10" aria-label = "Robot Jones from Cartoon Network">
+		</div>
+
+		<!-- Div ID for Hampstervil Art-->
+		<div role = "img" id = "sketch6" aria-label = "Hampstervil from Lilo and Stitch">
+		</div>
+
+		<!-- Div ID for Ocarina Art-->
+		<div role = "img" id = "sketch8" aria-label = "A original spin on the Ocarina from The Legend of Zelda">
+		</div>
+
+		<!-- Div ID for Boo Art-->
+		<div role = "img" id = "sketch1" aria-label = "A Boo from Super Mario World, but drawn as a hipster for my friend.">
+		</div>
+
+		<!-- Div ID for Castle Crashers Art-->
+		<div role = "img" id = "sketch4" aria-label = "The Purple Knight from Castle Crashers">
+		</div>
+
+		<!-- Div ID for Darkman Art-->
+		<div role = "img" id = "sketch5" aria-label = "Dark Man 1 from Mega Man 5">
+		</div>
+
+		<!-- Div ID for Pizelle Art-->
+		<div role = "img" id = "sketch9" aria-label = "Pizzelle from Sugary Spire">
+		</div>
+		
+		<!-- Div ID for Trippy Practice Art-->
+		<div role = "img" id = "sketch12" aria-label = "Some wavy art, a lost work in progress.">
+		</div>
+
+		<!-- Div ID for Trippy Cat Art-->
+		<div role = "img" id = "sketch11" aria-label = "More wave and curves practice with one of my characters.">
+		</div>
+		
+		<!-- Div ID for Yellow Devil Art-->
+		<div role = "img" id = "sketch14" aria-label = "Yellow Devil Mark 2 from Mega Man 3">
+		</div>
+
+		<!-- Comments Box -->
+		<h1><span class="tealheader">Comments</span></h1>
+
+		<form method = "post" action = https://formspree.io/f/xdorwpll onsubmit = "return validateEmail();">
+			<p>Email Address*</p>
+			<input type="text" name="myEmail" id="myEmail" required = "required">
+			<p>Comments*</p>
+			<textarea name="artworkComments" id="myComments" rows="8" cols="18" required = "required">
+			</textarea>
+			<br>
+			<input type="submit" name="commentsSubmit" id="commentsSubmit">
+		</form>
+		
+		<!-- Footer Content -->
+		<footer>
+		
+			<hr>
+			<p>LinkedIn &trade; is a trademark and company of Microsoft Corporation</p>
+			<a href="mailto:tmorgan129@ivytech.edu">Questions? - tmorgan129@ivytech.edu</a><br>
+			<a href="https://www.flaticon.com/free-icons/download" title="download icons">
+			Download icons created by Pixel perfect - Flaticon</a>
+		
+		</footer>
+		
+	</div>
+
+</body>
+
+</html>

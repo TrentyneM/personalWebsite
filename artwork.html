@@ -1,0 +1,107 @@
+<!-- Final Project for SDEV153 HTML -->
+
+<!-- DTD - Document Type Declaration -->
+<!DOCTYPE html>
+
+<!-- Dont forget to add the language attribute! -->
+<html lang = "en">
+
+<!-- HTML HEAD SECTION -->
+<head>
+
+	<!-- Our Website Title -->
+	<title>Trentyne Morgan :: Artwork</title>
+
+	<!-- UTF-8 Character Set -->
+	<meta charset = "utf-8">
+	
+	<!-- Linking our style sheet relatively -->
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+
+	<!-- Website Favorites icon -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+	<!-- Viewport meta tag for Mobile Displays -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The description meta tag content is displayed on the SERP by some search engines, such as Google. 
+	The name attribute indicates the use of the meta tag. The content attribute indicates the values needed for that specific use. 
+	The ­description value for the name attribute indicates that the use of the meta tag is to provide a description. -->
+	<meta name="description" content="I have made many types of art over the years ranging between mediums from Digital Art, 
+	Traditional Sketch, and Retro Pixel Art.">
+	
+</head>
+
+<!-- HTML BODY SECTION -->
+<body>
+
+	<nav>
+		
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+	   		<li><a href = "artwork.html">Artwork</a></li>
+			<li><a href = "program.html">Programming</a></li>
+			<li><a href = "https://www.linkedin.com/in/trentyne-morgan-4a30031b4/"
+			target = "_blank">LinkedIn</a>&trade;</li>
+		</ul>
+
+	</nav>
+
+	<div id = "wrapper">
+	
+		<!-- Image Here -->
+		<!-- When using aria-label, please use role to specify what
+		element role it should take, otherwise you will get warnings
+		from the Nu HTML checker.-->
+		<div role = "img" id = "vaporsun" aria-label = "Logo Graphic">
+		</div>
+
+		<!-- Website's Header -->
+		<header>
+	
+			<h1><span class = "tealheader">Artwork</span></h1>
+		
+		</header>
+		
+		<!-- Main Site Content -->
+		<main>
+			<p>Since I was in middle school I have been learning various forms of art, <br>starting
+			with <span class = "tealtext"> Traditional Sketching </span> before starting 
+			<span class = "tealtext"> Pixel Art </span> and now this year, <br> <span class = "tealtext">Digital Art.</span>
+			I hope to <span class = "tealtext">incorporate my art into a video game of my own I create one day</span>, <br> in the
+			current moment I refine my art skills, varying between medium each time.</p>
+		</main>
+		
+		<!-- Creating a new div id for our navigation links -->
+		<div id = "secondarynav">
+		
+			<a href="sketchgallery.html">
+				<img src="images/buttons/sketchbutton.png" alt="Traditional Sketch Gallery Button" style="width:154px;height:225px;">
+			</a><br>
+
+			<a href="pixelartgallery.html">
+				<img src="images/buttons/digitalbutton.png" alt="Pixel Art Gallery Button" style="width:154px;height:225px;">
+			</a><br>
+		
+		</div>
+
+		<!-- Image Here -->
+		<div role = "img" id = "myart" aria-label = "Body Graphic">
+		</div>
+		
+		<!-- Footer Content -->
+		<footer>
+		
+			<hr>
+			<p>LinkedIn &trade; is a trademark and company of Microsoft Corporation</p>
+			<a href="mailto:tmorgan129@ivytech.edu">Questions? - tmorgan129@ivytech.edu</a><br>
+			<a href="https://www.flaticon.com/free-icons/download" title="download icons">
+				Download icons created by Pixel perfect - Flaticon</a>
+		
+		</footer>
+		
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,255 @@
+<!-- Final Project for SDEV153 HTML -->
+
+<!-- DTD - Document Type Declaration -->
+<!DOCTYPE html>
+
+<!-- Dont forget to add the language attribute! -->
+<html lang = "en">
+
+<!-- HTML HEAD SECTION -->
+<head>
+
+	<!-- Our Website Title -->
+	<title>Trentyne Morgan :: Python Project Gallery</title>
+
+	<!-- UTF-8 Character Set -->
+	<meta charset = "utf-8">
+	
+	<!-- Linking our style sheet relatively -->
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+
+	<!-- Website Favorites icon -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+	<!-- Viewport meta tag for Mobile Displays -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The description meta tag content is displayed on the SERP by some search engines, such as Google. 
+	The name attribute indicates the use of the meta tag. The content attribute indicates the values needed for that specific use. 
+	The ­description value for the name attribute indicates that the use of the meta tag is to provide a description. -->
+	<meta name="description" content="Source Code Downloads and Gallery for my Python Projects I have created.">
+
+	<!-- Javascript -->
+	<script>
+
+		function validateEmail(email) {
+
+ 			// Regular expression pattern for email validation, (take more notes on regex usage)
+  			var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  			// Test the email against the pattern
+  			if (emailPattern.test(document.forms[0].myEmail.value)){
+
+				return true;
+
+			} else {
+
+				alert("Invalid E-mail Address. Please enter an email in the format 'username@provider.domain'");
+				return false;
+			}
+
+		}
+
+	</script>
+	
+</head>
+
+<!-- HTML BODY SECTION -->
+<body>
+
+	<nav>
+		
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+	   		<li><a href = "artwork.html">Artwork</a></li>
+			<li><a href = "program.html">Programming</a></li>
+			<li><a href = "https://www.linkedin.com/in/trentyne-morgan-4a30031b4/"
+				target = "_blank">LinkedIn</a>&trade;</li>
+		</ul>
+
+	</nav>
+
+	<div id = "wrapper">
+	
+		<!-- Image Here -->
+		<!-- When using aria-label, please use role to specify what
+		element role it should take, otherwise you will get warnings
+		from the Nu HTML checker.-->
+		<div role = "img" id = "vaporsun" aria-label = "Home Graphic">
+		</div>
+
+		<!-- Website's Header -->
+		<header>
+	
+			<h1><span class = "tealheader">Python Programming Projects</span></h1>
+		
+		</header>
+
+		<!-- Secondary Navigation within Programming Projects-->
+		<ul class = "gallerynav">
+
+			<li><a href = "cplusplusgallery.html">C++</a></li>
+			<li><a href = "pythongallery.html">Python</a></li>
+		 	<li><a href = "htmlcssgallery.html">HTML</a></li>
+
+		</ul>
+
+		<!-- Table of C++ Programming Projects and Downloads-->
+		<table>
+
+			<!-- Our first row will use <th> elements for the 
+			table row headings-->
+			<tr>
+				<th>Project Name</th>
+				<th>Project Description</th>
+				<th>Source Download</th>
+			</tr>
+
+			<tr>
+				<td>BoogoTest</td>
+				<td>
+					An unfinished game project me and one of my high school friends that was an artist was working on.
+				</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/boogoTest" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/py/boogoTest/boogoTest.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>Discord Moderator Bot</td>
+				<td>
+					A template you can use to get your moderator bot started. You'll need to 
+					provide your Discord developer token in a text file renamed to "key.bot".
+				</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/discordBotTemplate" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/py/discordBot/discordBot.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>Aperture Science Clock</td>
+				<td>
+					This project is a clock themed in the style of an Aperture Science Terminal from the game Portal 2.
+				</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/apertureScienceClock" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/py/apertureClock/apertureClock.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td>Distance Formula Calculator</td>
+				<td>
+					A program that can calculate the squared result between 2 ordered pairs using distance formula.
+				</td>
+				<td>
+					<a href = "https://github.com/TrentyneM/distFormulaCalc" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/py/distCalc/distCalc.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>RingNoMore (Windows Only)</td>
+				<td>
+					A small project I had made to turn off a ring connected to a router at my house through selenium.
+				</td>
+				<td>
+					<a href = "https://github.com/TrentyneM/ringNoMore" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/py/ringNoMore/ringProject.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+				</td>
+			</tr>
+
+			<tr>
+				<td>Tile Pattern Demo</td>
+				<td>
+					My first pygame project, draws 255 random colored tiles in a 480x480 window.
+				</td>
+				<td>
+					<a href = "https://github.com/TrentyneM/tilePatternDemo" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/py/tileDemo/tileDemo.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+				</td>
+			</tr>
+
+
+		</table>
+
+		<!-- Comments Box -->
+		<h1><span class="tealheader">Comments/Issues</span></h1>
+
+		<form method = "post" action = https://formspree.io/f/xdorwpll onsubmit = "return validateEmail();">
+			<p>Email Address*</p>
+			<input type="text" name="myEmail" id="myEmail" required = "required">
+			<p>Comments*</p>
+			<textarea name="artworkComments" id="myComments" rows="8" cols="18" required = "required">
+			</textarea>
+			<br>
+			<input type="submit" name="commentsSubmit" id="commentsSubmit">
+		</form>
+		
+		<!-- Footer Content -->
+		<footer>
+		
+			<hr>
+			<p>LinkedIn &trade; is a trademark and company of Microsoft Corporation</p>
+			<p>Github &trade; is a trademark and company of Microsoft Corporation</p>
+			<a href="mailto:tmorgan129@ivytech.edu">Questions? - tmorgan129@ivytech.edu</a><br>
+			<a href="https://www.flaticon.com/free-icons/download" title="download icons">
+			Download icons created by Pixel perfect - Flaticon</a>
+		
+		</footer>
+		
+	</div>
+
+</body>
+
+</html>

@@ -1,0 +1,865 @@
+ /* The asterisk is used as the universal
+ element selector, targeting all HTML elements on the page */
+* {
+ 
+	/* The border-box property clips the display to the area behind the content,
+	padding, and border; similar to the padding-box property except that the image will display
+	behind a border. */
+	box-sizing: border-box;
+	font-family: arial;
+ 
+}
+
+/* Psuedo-class for gallerynav */
+.gallerynav a:link{color:#85356d}
+.gallerynav a:visited{color:#85356d}
+
+/* HTML ELEMENT SELECTORS =============================================================================================== */
+
+/* Styles for the Paragraph element selector <p> */
+p {
+	
+	font-size: 18px;
+	text-align: center;
+	
+}
+
+/* Navigation element at the top of page, the
+elements below this are just to manipulate the list contained
+within the nav element as well as the a links.*/
+nav{
+	background-color: #50bc9d;
+	font-size: 20px;
+	margin-left: 50px;
+	margin-right: 50px;
+	font-weight: bold;
+	margin-bottom: 0;
+	text-align: center;
+	box-shadow: 15px 15px 15px #828282;
+}
+
+nav ul{
+
+	list-style-type: none;
+	text-align: center;
+	display: inline-block;
+	padding: 0
+
+}
+
+nav li{
+	text-align: center;
+	padding: 0
+}
+
+nav a {
+
+	font-size: 17px;
+	color: #85356d;
+	text-decoration: none;
+	text-align: center;
+
+}
+
+/* Making sure the links in the main area have no underlining */
+main a {
+
+	text-decoration: none;
+
+}
+
+/* Styles for Table element */
+table{
+
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+	min-width: 200px;
+	max-width: 600px;
+	margin-left: auto;
+	margin-right: auto;
+	box-shadow: 10px 10px 10px #828282;
+}
+
+/* Styles for the table data and table header elements */
+td, th{
+	border-width: 1px;
+	border-style: solid;
+	border-color: black;
+}
+
+th{
+
+	color: #85356d;
+	background-color: #50bc9d;
+}
+
+/* Styles for the body */
+body{
+
+	/* To configure a basic linear gradient, code the "linear-gradient" function
+	as the value of the background-image property. Indicate the direction of the
+	gradient by coding the keyword phrase "to bottom", "to top", "to left", "to right",
+	folled by two or more color values to indicate the color stops */
+	background-image: linear-gradient(to bottom, #ED61C3, #61EDC6);
+	background-repeat: no-repeat;
+	margin-bottom: 500px;
+
+}
+
+/* Styles for the footer */
+footer {
+
+	font-size: 13px;
+	margin: 40px;
+
+}
+
+/* Styles for the form */
+form textarea {
+
+	max-width: 800px;
+	min-width: 200px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* SPAN CLASS SELECTORS ================================================================================================= */
+
+.gallerynav{
+	display: block;
+	list-style-type: none;
+	text-align: center;
+	box-shadow: 5px 5px 5px #828282;
+	background-color: #50bc9d;
+	color:#85356d;
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: bold;
+	padding: 0;
+}
+
+.gallerynav ul{
+	display: block;
+	text-align: center;
+}
+
+.gallerynav li {
+	display: block;
+}
+
+.gallerynav a{
+	text-decoration: none;
+	margin: 50px
+}
+
+/* Class for bold and teal text for highlighting */
+.tealtext{
+	
+	color: #04635D;
+	font-size: 20px;
+	font-weight: 700;
+}
+
+/* We don't need the font-weight or font-size, so seperate
+HTML selector for the header */
+.tealheader{
+	
+	color: #04635D;
+}
+
+
+/* DIV ID SELECTORS ======================================================================================================= */
+
+/* Secondary Navigation ID selector for Artwork and Programming Projects pages */
+#secondarynav{
+
+	margin: 20px;
+	font-size: 20px;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+/* No underline for links in secondary nav */
+#secondarynav a{
+	text-decoration: none;
+	margin: 20px
+}
+
+/* Vaporwave sun image at top of page */
+#vaporsun{
+
+	min-height: 292px;
+	min-width: 263px;
+	
+	background-image: url("images/graphic1resized.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	
+}
+
+/* Artwork element near footer */
+#myart{
+
+	min-height: 300px;
+	min-width: 300px;
+	background-image: url("images/art300.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+
+}
+
+/* White area on the center of the page */
+#wrapper{
+
+	/* Centering all Text */
+	text-align: center;
+	background-color: #FFFFFF;
+	
+	/* This code makes the sides of this element smaller, showing more of the
+	website <body> element */
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 50px;
+	margin-right: 50px;
+	box-shadow: 15px 15px 15px #828282;
+	
+	/*
+	min-width: 584px;
+	min-height: 590px;
+	*/
+	
+	/* background-image: linear-gradient(to bottom, #fc6ff5, #FFFFFF); */
+	background-repeat: no-repeat;
+}
+
+/* ####### DIV ID'S FOR MOBILE IMAGES IN SKETCH GALLERY ############################################################# */
+
+/* Boo Sketch Art */
+#sketch1{
+
+	min-height: 393px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/boo.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch3{
+
+	min-height: 393px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/busterrodg.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch4{
+
+	min-height: 272px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/castlecrashers.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch5{
+
+	min-height: 221px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/darkman.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch6{
+
+	min-height: 393px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/hampstervil.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch7{
+
+	min-height: 393px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/jamaroquai.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch8{
+
+	min-height: 233px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/ocarina.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch9{
+
+	min-height: 307px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/pizzellesketch.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch10{
+
+	min-height: 375px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/robotjones.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch11{
+
+	min-height: 297px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/trippycat.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch12{
+
+	min-height: 315px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/trippypractice.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch13{
+
+	min-height: 308px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/uni.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+#sketch14{
+
+	min-height: 326px;
+	min-width: 295px;
+	background-image: url("mobile/sketch/yellowdevilmegaman.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+	}
+
+/* ### DIV ID'S FOR MOBILE IMAGES IN DIGITAL AND PIXEL ARTWORK #######################################################################*/
+/* Hyper Storm H */
+#pixel1{
+
+	min-height: 295px;
+	min-width: 295px;
+	background-image: url("mobile/digital/hyperstormh.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+/* Pixel Art City */
+#pixel2{
+
+	min-height: 169px;
+	min-width: 295px;
+	background-image: url("mobile/digital/pixelcity.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 0px;
+
+}
+
+/* Deku Tree Art */
+#pixel3{
+
+	min-height: 297px;
+	min-width: 295px;
+	background-image: url("mobile/digital/pixeldekutree.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+/* Trippy Eyeball Art */
+#pixel4{
+
+	min-height: 293px;
+	min-width: 295px;
+	background-image: url("mobile/digital/pixeleyeballtrippy.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+/* Heatman */
+#pixel5{
+
+	min-height: 297px;
+	min-width: 295px;
+	background-image: url("mobile/digital/pixelheatmanmegaman2.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+/* Pixel Sunset */
+#pixel6{
+
+	min-height: 294px;
+	min-width: 295px;
+	background-image: url("mobile/digital/pixelsunset.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+/* Trapper Keeper Digital Art */
+#digital1{
+
+	min-height: 443px;
+	min-width: 295px;
+	background-image: url("mobile/digital/trapperkeeperdesign.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+/* Space Design Digital Art */
+#digital2{
+
+	min-height: 443px;
+	min-width: 295px;
+	background-image: url("mobile/digital/spacedesign.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+/* Vex Digital Art */
+#digital3{
+
+	min-height: 443px;
+	min-width: 295px;
+	background-image: url("mobile/digital/friendscharacter.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-bottom: 20px;
+
+}
+
+/* CSS MEDIA QUERIES ======================================================================================================== */
+
+/* For Galaxy S7 and Galaxy Note 8 Testing (Probably doesn't work) */
+@media (max-width: 360px){
+	
+	#wrapper{
+		margin-left: 300px;
+		margin-right: 300px;
+	}
+
+	nav{
+		margin-left: 400px;
+		margin-right: 400px;
+		text-align: center;
+	}
+	
+	nav a{
+		font-size: 10px;
+	}
+
+	footer a{
+		font-size: 10px;
+	}
+	
+}
+
+/* If the screen is bigger than 500px, make the navigation display normally */
+@media (min-width: 534px){
+
+	.gallerynav{
+		display: inline-block;
+	}
+	
+	.gallerynav ul{
+		display: inline-block;
+	}
+	
+	.gallerynav li {
+		display: inline-block;
+	}
+	
+	.gallerynav a{
+		text-decoration: none;
+	}
+
+	nav ul{
+		display: inline-block;
+	}
+
+	nav li{
+		display: inline;
+	}
+
+}
+
+
+/* If the screen is bigger than 1024 px, these styles apply*/
+@media (min-width: 1024px){
+	
+	#wrapper{
+		margin-left: 200px;
+		margin-right: 200px;
+	}
+
+	#secondarynav{
+		display: inline-flex;
+	}
+
+	#secondarynav img{
+		margin-left: 5px;
+		margin-right: 5px;
+	}
+
+
+	nav{
+		background-color: #50bc9d;
+		font-size: 20px;
+		margin-left: 200px;
+		margin-right: 200px;
+		font-weight: bold;
+		text-align: center;
+	}
+	
+	nav a {
+	
+		margin: 10px;
+		color: #85356d;
+		text-decoration: none;
+	
+	}
+
+	nav ul{
+		display: inline-block;
+	}
+
+	nav li{
+		display: inline;
+	}
+
+	/* Styles for the form */
+	form textarea {
+
+		min-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	footer{
+
+		font-size: 12px;
+
+	}
+
+	footer p {
+
+		font-size: 13px;
+	}
+
+/* ####### DIV ID'S FOR PIXEL AND DIGITAL ART GALLERY IMAGES FOR 1024px OR WIDER ############################################### */
+
+	/* Hyper Storm H */
+	#pixel1{
+
+		min-height: 601px;
+		min-width: 601px;
+		background-image: url("pixel/hyperstormh.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	/* Pixel Art City */
+	#pixel2{
+
+		min-height: 344px;
+		min-width: 600px;
+		background-image: url("pixel/pixelcity.PNG");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-top: 0px;
+
+	}
+
+	/* Deku Tree Art */
+	#pixel3{
+
+		min-height: 604px;
+		min-width: 600px;
+		background-image: url("pixel/pixeldekutree.PNG");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	/* Trippy Eyeball Art */
+	#pixel4{
+
+		min-height: 595px;
+		min-width: 600px;
+		background-image: url("pixel/pixeleyeballtrippy.PNG");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	/* Heatman */
+	#pixel5{
+
+		min-height: 601px;
+		min-width: 605px;
+		background-image: url("pixel/pixelheatmanmegaman2.PNG");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	/* Pixel Sunset */
+	#pixel6{
+
+		min-height: 600px;
+		min-width: 598px;
+		background-image: url("pixel/pixelsunset.PNG");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	/* Trapper Keeper Digital Art */
+	#digital1{
+
+		min-height: 900px;
+		min-width: 600px;
+		background-image: url("digital/trapperkeeperdesign.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	/* Space Design Digital Art */
+	#digital2{
+
+		min-height: 900px;
+		min-width: 600px;
+		background-image: url("digital/spacedesign.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	/* Vex Digital Art */
+	#digital3{
+
+		min-height: 900px;
+		min-width: 600px;
+		background-image: url("digital/friendscharacter.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+/* ####### DIV ID'S FOR SKETCH GALLERY IMAGES FOR 1024px OR WIDER ############################################################# */
+
+	/* Boo Sketch Art */
+	#sketch1{
+
+		min-height: 800px;
+		min-width: 600px;
+		background-image: url("sketch/boo.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch3{
+
+		min-height: 800px;
+		min-width: 600px;
+		background-image: url("sketch/busterrodg.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch4{
+
+		min-height: 554px;
+		min-width: 600px;
+		background-image: url("sketch/castlecrashers.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch5{
+
+		min-height: 450px;
+		min-width: 600px;
+		background-image: url("sketch/darkman.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch6{
+
+		min-height: 800px;
+		min-width: 600px;
+		background-image: url("sketch/hampstervil.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch7{
+
+		min-height: 800px;
+		min-width: 600px;
+		background-image: url("sketch/jamaroquai.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch8{
+
+		min-height: 473px;
+		min-width: 600px;
+		background-image: url("sketch/ocarina.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch9{
+
+		min-height: 624px;
+		min-width: 600px;
+		background-image: url("sketch/pizzellesketch.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch10{
+
+		min-height: 763px;
+		min-width: 600px;
+		background-image: url("sketch/robotjones.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch11{
+
+		min-height: 605px;
+		min-width: 600px;
+		background-image: url("sketch/trippycat.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch12{
+
+		min-height: 641px;
+		min-width: 600px;
+		background-image: url("sketch/trippypractice.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch13{
+
+		min-height: 627px;
+		min-width: 600px;
+		background-image: url("sketch/uni.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+
+	#sketch14{
+
+		min-height: 664px;
+		min-width: 600px;
+		background-image: url("sketch/yellowdevilmegaman.jpg");
+		background-position: center;
+		background-repeat: no-repeat;
+		margin-bottom: 20px;
+
+	}
+}
+

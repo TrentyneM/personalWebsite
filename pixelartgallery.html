@@ -1,0 +1,162 @@
+<!-- Final Project for SDEV153 HTML -->
+
+<!-- DTD - Document Type Declaration -->
+<!DOCTYPE html>
+
+<!-- Dont forget to add the language attribute! -->
+<html lang = "en">
+
+<!-- HTML HEAD SECTION -->
+<head>
+
+	<!-- Our Website Title -->
+	<title>Trentyne Morgan :: Pixel and Digital Art Gallery</title>
+
+	<!-- UTF-8 Character Set -->
+	<meta charset = "utf-8">
+	
+	<!-- Linking our style sheet relatively -->
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+
+	<!-- Website Favorites icon -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+	<!-- Viewport meta tag for Mobile Displays -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The description meta tag content is displayed on the SERP by some search engines, such as Google. 
+	The name attribute indicates the use of the meta tag. The content attribute indicates the values needed for that specific use. 
+	The ­description value for the name attribute indicates that the use of the meta tag is to provide a description. -->
+	<meta name="description" content="A gallery of all of my digital artwork projects over the years.">
+
+	<!-- Javascript -->
+	<script>
+
+		function validateEmail(email) {
+
+ 			// Regular expression pattern for email validation
+  			var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  			// Test the email against the pattern
+  			if (emailPattern.test(document.forms[0].myEmail.value)){
+
+				return true;
+
+			} else {
+
+				alert("Invalid E-mail Address. Please enter an email in the format 'username@provider.domain'");
+				return false;
+			}
+
+		}
+
+	</script>
+	
+</head>
+
+<!-- HTML BODY SECTION -->
+<body>
+
+	<nav>
+		
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+	   		<li><a href = "artwork.html">Artwork</a></li>
+			<li><a href = "program.html">Programming</a></li>
+			<li><a href = "https://www.linkedin.com/in/trentyne-morgan-4a30031b4/"
+			target = "_blank">LinkedIn</a>&trade;</li>
+		</ul>
+
+	</nav>
+
+	<div id = "wrapper">
+	
+		<!-- Image Here -->
+		<!-- When using aria-label, please use role to specify what
+		element role it should take, otherwise you will get warnings
+		from the Nu HTML checker.-->
+		<div role = "img" id = "vaporsun" aria-label = "Logo Graphic">
+		</div>
+
+		<!-- Website's Header -->
+		<header>
+	
+			<h1><span class = "tealheader">Pixel And Digital Art Gallery</span></h1>
+		
+		</header>
+
+		<ul class = "gallerynav">
+
+			<li><a href = "sketchgallery.html">Sketch Art Gallery</a></li>
+			<li><a href = "pixelartgallery.html">Digital Art Gallery</a></li>
+		
+		</ul>
+
+		<!-- Div ID for Pixel Sunset Art-->
+		<div role = "img" id = "pixel6" aria-label = "A sunset in the style of Pixel Art">
+		</div>
+
+		<!-- Div ID for Deku Tree Art-->
+		<div role = "img" id = "pixel3" aria-label = "A pixel art version of the Deku Tree from The Legend of Zelda, 
+		done for a friends birthday">
+		</div>
+
+		<!-- Div ID for Heat Man Art-->
+		<div role = "img" id = "pixel5" aria-label = "A pixel art version of Heat Man from Mega Man 2">
+		</div>
+
+		<!-- Div ID for Trapper Keeper Art-->
+		<div role = "img" id = "digital1" aria-label = "Digital artwork inspired by Trapper Keeper Designs of the 80s. 
+		drawn with a Samsung Galaxy Note 8">
+		</div>
+
+		<!-- Div ID for Trippy Eyeball Art-->
+		<div role = "img" id = "pixel4" aria-label = "A wavy eyeball drawn for my friend drawn in Pixel Art">
+		</div>
+
+		<!-- Div ID for Space Design Art-->
+		<div role = "img" id = "digital2" aria-label = "A space design that takes homage from arcade rugs of the early 90s.
+		drawn with a Samsung Galaxy Note 8.">
+		</div>
+
+		<!-- Div ID for Vex Art-->
+		<div role = "img" id = "digital3" aria-label = "Another version of my friends character, drawn with a Samsung Galaxy Note 8">
+		</div>
+
+		<!-- Div ID for Hyper Storm H Art-->
+		<div role = "img" id = "pixel1" aria-label = "A pixel art version of Hyper Storm H from Mega Man: The Wily Wars">
+		</div>
+
+		<!-- Div ID for Pixel City Art-->
+		<div role = "img" id = "pixel2" aria-label = "A purple colored nighttime city in the style of pixel art.">
+		</div>
+
+		<!-- Comments Box -->
+		<h1><span class="tealheader">Comments</span></h1>
+
+		<form method = "post" action = https://formspree.io/f/xdorwpll onsubmit = "return validateEmail();">
+			<p>Email Address*</p>
+			<input type="text" name="myEmail" id="myEmail" required = "required">
+			<p>Comments*</p>
+			<textarea name="artworkComments" id="myComments" rows="8" cols="18" required = "required">
+			</textarea>
+			<br>
+			<input type="submit" name="commentsSubmit" id="commentsSubmit">
+		</form>
+		
+		<!-- Footer Content -->
+		<footer>
+		
+			<hr>
+			<p>LinkedIn &trade; is a trademark and company of Microsoft Corporation</p>
+			<a href="mailto:tmorgan129@ivytech.edu">Questions? - tmorgan129@ivytech.edu</a><br>
+			<a href="https://www.flaticon.com/free-icons/download" title="download icons">
+			Download icons created by Pixel perfect - Flaticon</a>
+		
+		</footer>
+		
+	</div>
+
+</body>
+
+</html>

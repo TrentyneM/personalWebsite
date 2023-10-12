@@ -1,0 +1,266 @@
+<!-- Final Project for SDEV153 HTML -->
+
+<!-- DTD - Document Type Declaration -->
+<!DOCTYPE html>
+
+<!-- Dont forget to add the language attribute! -->
+<html lang = "en">
+
+<!-- HTML HEAD SECTION -->
+<head>
+
+	<!-- Our Website Title -->
+	<title>Trentyne Morgan :: C++ Project Gallery</title>
+
+	<!-- UTF-8 Character Set -->
+	<meta charset = "utf-8">
+	
+	<!-- Linking our style sheet relatively -->
+	<link rel = "stylesheet" type="text/css" href="styles.css">
+
+	<!-- Website Favorites icon -->
+	<link rel="icon" type="image/x-icon" href="/images/favicon.png">
+
+	<!-- Viewport meta tag for Mobile Displays -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- The description meta tag content is displayed on the SERP by some search engines, such as Google. 
+	The name attribute indicates the use of the meta tag. The content attribute indicates the values needed for that specific use. 
+	The ­description value for the name attribute indicates that the use of the meta tag is to provide a description. -->
+	<meta name="description" content="Source Code Downloads and Gallery for my C++ Projects I have created.">
+
+	<!-- Javascript -->
+	<script>
+
+		function validateEmail(email) {
+
+ 			// Regular expression pattern for email validation
+  			var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  
+  			// Test the email against the pattern
+  			if (emailPattern.test(document.forms[0].myEmail.value)){
+
+				return true;
+
+			} else {
+
+				alert("Invalid E-mail Address. Please enter an email in the format 'username@provider.domain'");
+				return false;
+			}
+
+		}
+
+	</script>
+	
+</head>
+
+<!-- HTML BODY SECTION -->
+<body>
+
+	<nav>
+		
+		<ul>
+			<li><a href = "index.html">Home</a></li>
+	   		<li><a href = "artwork.html">Artwork</a></li>
+			<li><a href = "program.html">Programming</a></li>
+			<li><a href = "https://www.linkedin.com/in/trentyne-morgan-4a30031b4/"
+				target = "_blank">LinkedIn</a>&trade;</li>
+		</ul>
+
+	</nav>
+
+	<div id = "wrapper">
+	
+		<!-- Image Here -->
+		<!-- When using aria-label, please use role to specify what
+		element role it should take, otherwise you will get warnings
+		from the Nu HTML checker.-->
+		<div role = "img" id = "vaporsun" aria-label = "Logo Graphic">
+		</div>
+
+		<!-- Website's Header -->
+		<header>
+	
+			<h1><span class = "tealheader">C++ Programming Projects</span></h1>
+		
+		</header>
+
+		<!-- Secondary Navigation within Programming Projects-->
+		<ul class = "gallerynav">
+
+			<li><a href = "cplusplusgallery.html">C++</a></li>
+			<li><a href = "pythongallery.html">Python</a></li>
+		 	<li><a href = "htmlcssgallery.html">HTML</a></li>
+
+		</ul>
+
+		<!-- Table of C++ Programming Projects and Downloads-->
+		<table>
+
+			<!-- Our first row will use <th> elements for the 
+			table row headings-->
+			<tr>
+				<th>Project Name</th>
+				<th>Project Description</th>
+				<th>Source Download</th>
+			</tr>
+
+			<tr>
+				<td>Battle Simulator</td>
+				<td>This project is a small turn-based battle simulator using RNG for the enemy moves</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/battleSimulator" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/cpp/battleSim.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>Coin Counter</td>
+				<td>A small program to count your coins and write your total to disk.</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/coinCounter" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/cpp/coinCount.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>Game Map System</td>
+				<td>This project utilizes C++ classes to create custom grid based maps for text adventure games.</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/gameMapSystem" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/cpp/mapSystem.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>Slow Terminal Type Effect</td>
+				<td>A resusable C++ .hpp file to use in your projects for when you want the terminal to type out... slowly...</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/slowTypeEffect" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/cpp/slowtype.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+					
+				</td>
+			</tr>
+
+			<tr>
+				<td>Terminally Suprising Slots</td>
+				<td>RNG Based Slot game, test your luck, or edit the code and raise the stakes.</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/termSlots" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/cpp/termSlots.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>Tic Tac Toe</td>
+				<td>Basic Tic Tac Toe Game, coded for 2 players</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/ticTacToe" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/cpp/ticTacToe.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+
+				</td>
+			</tr>
+
+			<tr>
+				<td>UFO Game</td>
+				<td>Spell out the words and save your friend from the spaceship.</td>
+				<td>
+
+					<a href = "https://github.com/TrentyneM/ufoGame" target = "_blank">
+						<img src="images/buttons/github.png" alt="Go to Github" style="width:64px;height:64px;">
+					</a>
+
+					<hr>
+
+					<a href = "source/cpp/ufoGame.zip" download>
+						<img src="images/buttons/downloadbutton.png" alt="Download" style="width:64px;height:64px;">
+					</a>
+
+				</td>
+			</tr>
+
+
+		</table>
+
+		<!-- Comments Box -->
+		<h1><span class="tealheader">Comments/Issues</span></h1>
+
+		<form method = "post" action = https://formspree.io/f/xdorwpll onsubmit = "return validateEmail();">
+			<p>Email Address*</p>
+			<input type="text" name="myEmail" id="myEmail" required = "required">
+			<p>Comments*</p>
+			<textarea name="artworkComments" id="myComments" rows="8" cols="18" required = "required">
+			</textarea>
+			<br>
+			<input type="submit" name="commentsSubmit" id="commentsSubmit">
+		</form>
+		
+		<!-- Footer Content -->
+		<footer>
+		
+			<hr>
+			<p>LinkedIn &trade; is a trademark and company of Microsoft Corporation</p>
+			<p>Github &trade; is a trademark and company of Microsoft Corporation</p>
+			<a href="mailto:tmorgan129@ivytech.edu">Questions? - tmorgan129@ivytech.edu</a><br>
+			<a href="https://www.flaticon.com/free-icons/download" title="download icons">
+			Download icons created by Pixel perfect - Flaticon</a>
+		
+		</footer>
+		
+	</div>
+
+</body>
+
+</html>
